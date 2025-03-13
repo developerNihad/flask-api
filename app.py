@@ -42,7 +42,9 @@ def get_news():
             'photo_url': item[3]
         })
 
-    return jsonify(news_list)
+    return jsonify({
+        'news': news_list
+    })
 
 
 if __name__ == '__main__':
